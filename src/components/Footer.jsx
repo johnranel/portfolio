@@ -4,7 +4,7 @@ import "../App.css"
 const Footer = () => {
     return (
         <footer>
-            <p>Created in 2025 by johnranel</p>
+            <p>Designed in Figma, coded in VS Code. Built using React.js and Tailwind CSS.</p>
         </footer>
     );
 }
