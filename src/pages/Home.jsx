@@ -5,11 +5,11 @@ import Footer from "./../components/Footer";
 
 const Home = () => {
     return (
-        <main className="mx-auto max-w-screen-xl px-6 md:px-12 grid grid-flow-row grid-cols-2 gap-5">
+        <main className="mx-auto max-w-screen-xl px-6 md:px-12 grid grid-flow-row grid-cols-2 gap-5 relative">
             <Header />
-            <section id="profile" className="lg:sticky lg:top-0 row-span-5 max-h-screen">
+            <section id="profile" className="lg:sticky lg:top-0 row-span-5 max-h-screen pt-32">
                 <figure>
-                    <img className="size-[250px] rounded-full" src="./../resources/images/john_ranel_dimaculangan.jpeg" alt="John Ranel Dimaculangan's picture" />
+                    <img className="size-[250px] rounded-full" src="./../resources/images/john_ranel_dimaculangan.jpeg" alt="John Ranel Dimaculangan" />
                     <figcaption className="h-px overflow-hidden">My Profile Picture</figcaption>
                 </figure>
                 <h1 className="text-4xl tracking-tight font-bold font-maven mt-10 mb-4">JOHN RANEL DIMACULANGAN</h1>
@@ -26,89 +26,209 @@ const Home = () => {
                     </a>
                 </div>
             </section>
-            <section id="about" className="mb-16 text-xl tracking-tight font-maven leading-normal">
+            <section id="about" className="mb-16 scroll-mt-16 text-xl tracking-tight font-maven leading-normal pt-32">
                 <p className="mb-4">I’m currently a student at King’s Own Institute studying a Master’s degree in Information Technology (Cyber Security). I am a passionate developer focused on delivering functional and accessible websites. Driven by a deep interest in IT, problem-solving and helping people by creating effective web-solutions.</p>
                 <p className="mb-4">Currently I am a Part-time IT Assistant at My Eye In The Sky, specializing in web maintenance. I contribute to the creation of new content and maintaining the UI / design of the company website, ensuring optimal performance and adherence to standards and best practices along with seamless user experience. Aside from this I also do for the company the account setups, GPS device configurations, and logistics setup.</p>
                 <p className="mb-4">My past experiences also include working for a start-up, which I have had the opportunity to develop website across a variety of companies/clients, including educational, health, opportunity and fund-raising platforms. Additionally I actively work personal projects to further enhance my skills.</p>
             </section>
-            <section id="experiences" className="mb-16">
+            <section id="experiences" className="mb-16 scroll-mt-16">
                 <ol className="group/list text-xl font-maven tracking-tight">
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col transition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <span className="col-span-2 text-lg">2023 - PRESENT</span>
                             <div className="col-span-6">
-                                <h2>IT Assistant (My Eye In The Sky)</h2>
+                                <h2 className="font-semibold">IT Assistant (My Eye In The Sky)</h2>
                                 <p className="mt-2">Build and maintain GPS device configurations, ensure that WordPress website is up to date and running.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">WordPress</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">HTML & CSS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">SQL</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">PHP</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Teltonika</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Wialon</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col transition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <span className="col-span-2 text-lg">2017 - 2023</span>
                             <div className="col-span-6">
-                                <h2>Web Developer (Odo Solutions & Enterprises Pte Ltd)</h2>
+                                <h2 className="font-semibold">Web Developer (Odo Solutions & Enterprises Pte Ltd)</h2>
                                 <p className="mt-2">Build, design, and ship quality websites and mobile apps, gathered diverse experiences from different type of projects.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Laravel</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">React Native</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">JavaScript</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">TypeScript</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">HTML & CSS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">PHP</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">SQL</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Neo4j</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col transition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <span className="col-span-2 text-lg">2016 - 2017</span>
                             <div className="col-span-6">
-                                <h2>Web Developer (Spectrum Tuition)</h2>
+                                <h2 className="font-semibold">Web Developer (Spectrum Tuition)</h2>
                                 <p className="mt-2">Build, design, and implement functionalities for an existing website focused on the education sector.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">CakePHP</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">HTML & CSS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">SQL</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">JavaScript</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                 </ol>
             </section>
-            <section id="projects">
+            <section id="projects" className="scroll-mt-16">
                 <ul className="group/list text-xl font-maven tracking-tight">
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col tansition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <figure className="col-span-2">
-                                <img src="./../resources/images/bg-placeholder.jpg" alt="personal website preview" />
+                                <img src="./../resources/images/bg-placeholder.jpg" alt="personal website preview" className="border-2 border-indigo-600/10 rounded-md" />
                                 <figcaption className="h-px w-px overflow-hidden absolute">Preview of my personal website.</figcaption>
                             </figure>
                             <div className="col-span-6">
-                                <h2>Personal Website</h2>
+                                <h2 className="font-semibold">Personal Website</h2>
                                 <p className="mt-2">Designed my personal website and built using ReactJS and Tailwind.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">ReactJS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Tailwind</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">JavaScript</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">HTML & CSS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Figma</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col tansition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <figure className="col-span-2">
-                                <img src="./../resources/images/bg-placeholder.jpg" alt="connect eurobodalla website preview" />
+                                <img src="./../resources/images/bg-placeholder.jpg" alt="connect eurobodalla website preview" className="border-2 border-indigo-600/10 rounded-md" />
                                 <figcaption className="h-px w-px overflow-hidden absolute">Preview of the connect eurobodalla website.</figcaption>
                             </figure>
                             <div className="col-span-6">
-                                <h2>Connect Eurobodalla</h2>
+                                <h2 className="font-semibold">Connect Eurobodalla</h2>
                                 <p className="mt-2">Built a website for the community of Eurobodalla to provide a safe platform for a range of services and opportunities within the community groups.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">ReactJS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Tailwind</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Firebase</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">JavaScript</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">HTML & CSS</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Google Cloud Platform</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col tansition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <figure className="col-span-2">
-                                <img src="./../resources/images/bg-placeholder.jpg" alt="cross student mobile application preview" />
+                                <img src="./../resources/images/bg-placeholder.jpg" alt="cross student mobile application preview" className="border-2 border-indigo-600/10 rounded-md" />
                                 <figcaption className="h-px w-px overflow-hidden absolute">Preview of the cross student mobile application.</figcaption>
                             </figure>
                             <div className="col-span-6">
-                                <h2>Cross Student Jobs</h2>
+                                <h2 className="font-semibold">Cross Student Jobs</h2>
                                 <p className="mt-2">Designed an app for international students looking for jobs and built front-end of application.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Flutter</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Dart</span>
+                                    </li>
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Figma</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li className="mb-12">
-                        <div className="grid grid-flow-col grid-cols-8 gap-4">
+                        <div className="group relative grid grid-flow-col tansition-all grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50">
+                            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-all lg:-inset-x-6 lg:block lg:group-hover:bg-black/5"></div>
                             <figure className="col-span-2">
-                                <img src="./../resources/images/bg-placeholder.jpg" alt="online store mobile application preview" />
+                                <img src="./../resources/images/bg-placeholder.jpg" alt="online store mobile application preview" className="border-2 border-indigo-600/10 rounded-md" />
                                 <figcaption className="h-px w-px overflow-hidden absolute">Preview of the online store mobile application.</figcaption>
                             </figure>
                             <div className="col-span-6">
-                                <h2>Online Store App</h2>
+                                <h2 className="font-semibold">Online Store App</h2>
                                 <p className="mt-2">Designed an app specifically for online stores.</p>
+                                <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technology used">
+                                    <li>
+                                        <span className="rounded-full bg-black/10 py-1 px-3 text-base">Figma</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </li>
