@@ -3,7 +3,7 @@ import "../App.css"
 
 const Header = () => {
     return (
-        <header className="col-span-2 absolute z-10 w-full px-12">
+        <header className="col-span-2 absolute z-10 w-full px-12 hidden lg:block">
             <nav className="py-10">
                 <ul className="group/nav flex gap-5 justify-self-end">
                     <li>
