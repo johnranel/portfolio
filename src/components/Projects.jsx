@@ -25,6 +25,16 @@ const Projects = () => {
         },
         {
             "id": 3,
+            "url": "https://johnranel.github.io/blog",
+            "img_url": "/portfolio/resources/images/life-musings-by-jane.png",
+            "img_alt": "life musings by jane blog website preview",
+            "img_caption": "Preview of the Life Musings by Jane Blog Website.",
+            "title": "Life Musings by Jane",
+            "description": "Designed and built a blog website for a fictional character named Jane.",
+            "technology_used": ["HTML & CSS", "JavaScript", "Figma"],
+        },
+        {
+            "id": 4,
             "url": "https://github.com/JohnRanelKOI/cross-student",
             "img_url": "/portfolio/resources/images/cross-student-jobs.png",
             "img_alt": "cross student mobile application preview",
@@ -34,7 +44,7 @@ const Projects = () => {
             "technology_used": ["Flutter", "Dart", "Figma"],
         },
         {
-            "id": 4,
+            "id": 5,
             "url": "https://www.figma.com/proto/QkFJMc9jN2VSzx1OPNxBOG/KMart?node-id=16-201&p=f&t=KLJXdNzk1Zbmz5Cn-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
             "img_url": "/portfolio/resources/images/online-store.png",
             "img_alt": "online store mobile application preview",
