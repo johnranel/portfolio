@@ -45,6 +45,16 @@ const Projects = () => {
         },
         {
             "id": 5,
+            "url": "https://express-react-spotify.onrender.com/",
+            "img_url": "/portfolio/resources/images/express-react-spotify-api.png",
+            "img_alt": "express react spotify api application preview",
+            "img_caption": "Preview of the express react spotify api.",
+            "title": "Spotify Profile",
+            "description": "An express, react and Spotify API web app",
+            "technology_used": ["Express", "ReactJS", "Spotify API", "NodeJS", "Figma"],
+        },
+        {
+            "id": 6,
             "url": "https://www.figma.com/proto/QkFJMc9jN2VSzx1OPNxBOG/KMart?node-id=16-201&p=f&t=KLJXdNzk1Zbmz5Cn-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
             "img_url": "/portfolio/resources/images/online-store.png",
             "img_alt": "online store mobile application preview",
